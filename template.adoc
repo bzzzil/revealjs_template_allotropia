@@ -1,0 +1,60 @@
+= Sample Presentation
+:title: Sample Presentation
+subtitle
+:revealjs_slideNumber: true
+:revealjs_overview: false
+:revealjs_customtheme: styles/styles.css
+:revealjs_center: false
+:encoding: UTF-8
+:lang: en
+
+== Slide
+* It is recommended to use link:https://code.visualstudio.com/[Visual Studio Code] with _AsciiDoc_ & _AsciiDoc Slides_ extensions from marketplace.
+
+* Images in my style sheet are with background & border. It is not the best appearance but you can tweak it in `styles/styles.css`.
+
+image:styles/allotropia.png[]
+
+== Slide #2
+* Item 1
+* Item 2
+
+[%step]
+* Item 3
+* Item 4
+
+== Some Source Code
+[source, c++]
+----
+OUString getDocumentBaseURL() const
+{
+    return GetMedium()->GetBaseURL();
+}
+----
+
+== Diagrams
+* Use link:https://kroki.io/[kroki.io] to tweak your diaagram faster
+
+[mermaid, services, png]
+----
+%%{init: {'theme':'dark'}}%%
+flowchart LR
+   Producer#1 --> Exchange#1
+   Producer#1 --> Exchange#2
+   Producer#2 --> Exchange#2
+   subgraph RabbitMQ
+     Exchange#1 --> Queue#1
+     Exchange#1 --> Queue#2
+     Exchange#2 --> Queue#2
+     Exchange#2 --> Queue#3
+   end
+   Queue#1 --> Consumer#1
+   Queue#1 --> Consumer#2
+   Queue#2 --> Consumer#3
+   Queue#2 --> Consumer#2
+----
+
+
+[.notitle]
+== Thank you! ;)
+Questions?
