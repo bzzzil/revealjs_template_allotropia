@@ -23,10 +23,14 @@ There are multiple options possible, but all of them are junk:
 
 * Like in case with PDF use slide show and put _/export_ or _/export-inlined_ to URL
 
-* Use node.js and NPM package from command line:
+* Use corresponding _npm_ package from command line (will require node.js + npm installed):
 
+Install required packages:
 ```
 npm i @asciidoctor/reveal.js asciidoctor-kroki
+```
+Run the conversion:
+```
 npx asciidoctor-revealjs -r asciidoctor-kroki template.adoc
 ```
 This way producing rather acceptable result. But can require extra HTML tweaking (more CSS & JavaScript). 
