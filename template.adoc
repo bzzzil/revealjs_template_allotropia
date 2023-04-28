@@ -1,6 +1,7 @@
 = Sample Presentation
 :title: Sample Presentation
 subtitle
+some more text
 :revealjs_slideNumber: true
 :revealjs_overview: false
 :revealjs_customtheme: styles/styles.css
